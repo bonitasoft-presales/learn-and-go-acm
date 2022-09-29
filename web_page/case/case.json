@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.0",
   "id" : "case",
   "name" : "case",
-  "lastUpdate" : 1660730245592,
+  "lastUpdate" : 1664462622535,
   "rows" : [
     [
       {
@@ -155,7 +155,8 @@
             "type" : "constant",
             "value" : [
               "Name",
-              "State"
+              "State",
+              "Executed By"
             ]
           },
           "type" : {
@@ -701,6 +702,7 @@
         "return [",
         "'name',",
         "'acmState ? acmState : bpmState | labelized',",
+        "'executedBy',",
         "function(input) {",
         "    return input.row.url ? `<a href=\\\"${input.row.url}\\\" target=\\\"${input.row.target}\\\" >Execute</a>` : ``;",
         "}",
