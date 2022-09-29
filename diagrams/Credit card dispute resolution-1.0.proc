@@ -207,8 +207,8 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_JWZnID_XEe2lV6ZpGQZQxQ" name="dispute" dataType="_cnRX5D_TEe2lV6ZpGQZQxQ" className="com.company.model.Dispute">
         <defaultValue xmi:type="expression:Expression" xmi:id="_JWZnIT_XEe2lV6ZpGQZQxQ" name="init_dispute()" content="import java.time.OffsetDateTime&#xA;&#xA;import com.company.model.Dispute&#xA;&#xA;def dispute = new Dispute()&#xA;&#xA;dispute.customer = Generator.newName()&#xA;dispute.amount = Math.round((1 + Math.random()) * 1000)&#xA;dispute.description = &quot;Unwanted withdrawal&quot;&#xA;dispute.creationDate = OffsetDateTime.now()&#xA;dispute.transactionDate = OffsetDateTime.now().minusDays(3)&#xA;dispute.supervisorApproval = false&#xA;&#xA;return dispute" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Dispute"/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_cnRXxD_TEe2lV6ZpGQZQxQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_OQs2kD_aEe2lV6ZpGQZQxQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_cnRXxD_TEe2lV6ZpGQZQxQ" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_AlmjED_bEe2lV6ZpGQZQxQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_cnRXxj_TEe2lV6ZpGQZQxQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_cnRXxz_TEe2lV6ZpGQZQxQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
